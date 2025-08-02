@@ -1,0 +1,21 @@
+**منابع مرجع**  
+
+[1] Amazon DynamoDB: https://aws.amazon.com/dynamodb/  
+[2] memcached: https://memcached.org/  
+[3] Redis: https://redis.io/  
+[4] Dynamo: فروشگاه کلید-مقدار با دسترسی بالا از آمازون: https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf  
+[5] Cassandra: https://cassandra.apache.org/  
+[6] Bigtable: یک سیستم ذخیره‌سازی توزیع‌شده برای داده‌های ساختاریافته: https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf  
+[7] درخت مرکل: https://en.wikipedia.org/wiki/Merkle_tree  
+[8] معماری Cassandra: https://cassandra.apache.org/doc/latest/architecture/  
+[9] SStable: https://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/  
+[10] فیلتر بلوم: https://en.wikipedia.org/wiki/Bloom_filter  
+
+---  
+
+*توضیحات:*  
+• **Dynamo** در [4] به عنوان *"فروشگاه کلید-مقدار با دسترسی بالا از آمازون"* ترجمه شده است.  
+• **Bigtable** در [6] به *"یک سیستم ذخیره‌سازی توزیع‌شده برای داده‌های ساختاریافته"* ترجمه شده است.  
+• **Merkle tree** و **Bloom filter** به ترتیب به *"درخت مرکل"* و *"فیلتر بلوم"* ترجمه شده‌اند که اصطلاحات شناخته‌شده در حوزه فناوری هستند.  
+
+تمامی لینک‌ها به همان صورت اصلی حفظ شده‌اند.

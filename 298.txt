@@ -1,0 +1,16 @@
+**منابع مرجع**  
+
+[1] پیام‌کوتاه توییلو: https://www.twilio.com/sms  
+[2] پیام‌کوتاه نکسمو: https://www.nexmo.com/products/sms  
+[3] سندگرید: https://sendgrid.com/  
+[4] میل‌چیمپ: https://mailchimp.com/  
+[5] *شما نمی‌توانید تحویل دقیقاً-یک‌بار داشته باشید*:  
+https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/  
+[6] *امنیت در اعلان‌های فشاری*:  
+https://cloud.ibm.com/docs/services/mobilepush?topic=mobile-pushnotification-security-in-push-notifications  
+[7] رابیت‌ام‌کیو: https://bit.ly/2sotIa6  
+
+---  
+*توضیحات:*  
+- **دقیقاً-یک‌بار** (*Exactly-Once*) به الگوی تحویل پیام در سیستم‌های توزیع‌شده اشاره دارد.  
+- **اعلان‌های فشاری** (*Push Notifications*) پیام‌هایی هستند که از سرور به دستگاه کاربر ارسال می‌شوند.

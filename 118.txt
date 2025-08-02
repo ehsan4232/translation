@@ -1,0 +1,51 @@
+**منابع مرجع**  
+[1] استراتژی‌ها و تکنیک‌های محدودسازی نرخ:  
+https://cloud.google.com/solutions/rate-limiting-strategies-techniques  
+
+[2] محدودیت‌های نرخ توییتر:  
+https://developer.twitter.com/en/docs/basics/rate-limits  
+
+[3] محدودیت‌های استفاده از Google Docs:  
+https://developers.google.com/docs/api/limits  
+
+[4] میکروسرویس‌های IBM:  
+https://www.ibm.com/cloud/learn/microservices  
+
+[5] محدودسازی درخواست‌های API برای بهبود توان عملیاتی:  
+https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html  
+
+[6] محدودکننده‌های نرخ Stripe:  
+https://stripe.com/blog/rate-limiters  
+
+[7] محدودیت‌های نرخ REST Admin API Shopify:  
+https://help.shopify.com/en/api/reference/rest-admin-api-rate-limits  
+
+[8] محدودسازی نرخ بهتر با استفاده از مجموعه‌های مرتب‌شده Redis:  
+https://engineering.classdojo.com/blog/2015/02/06/rolling-rate-limiter/  
+
+[9] طراحی سیستم — محدودکننده نرخ و مدل‌سازی داده:  
+https://medium.com/@saisandeepmopuri/system-design-rate-limiter-and-data-modelling-9304b0d18250  
+
+[10] چگونه محدودسازی نرخی ساختیم که مقیاس‌پذیر به میلیون‌ها دامنه است:  
+https://blog.cloudflare.com/counting-things-a-lot-of-different-things/  
+
+[11] وبسایت Redis:  
+https://redis.io/  
+
+[12] محدودسازی نرخ Lyft:  
+https://github.com/lyft/ratelimit  
+
+[13] مقیاس‌دهی API با محدودکننده‌های نرخ:  
+https://gist.github.com/ptarjan/e38f45f2dfe601419ca3af937fff574d#request-rate-limiter  
+
+[14] رایانش لبه چیست:  
+https://www.cloudflare.com/learning/serverless/glossary/what-is-edge-computing/  
+
+[15] محدودسازی نرخ درخواست‌ها با Iptables:  
+https://blog.programster.org/rate-limit-requests-with-iptables  
+
+[16] مدل OSI:  
+https://en.wikipedia.org/wiki/OSI_model#Layer_architecture  
+
+---  
+*تمامی لینک‌ها به منابع اصلی انگلیسی ارجاع داده شده‌اند.*

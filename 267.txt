@@ -1,0 +1,58 @@
+**منابع مرجع**  
+
+[1] کتابخانه کنگره آمریکا:  
+https://www.loc.gov/websites/  
+
+[2] آرشیو وب اتحادیه اروپا:  
+http://data.europa.eu/webarchive  
+
+[3] دایجی‌مارک:  
+https://www.digimarc.com/products/digimarc-services/piracy-intelligence  
+
+[4] هیدون ای.، ناجورک ام.  
+*مرکاتور: یک خزنده وب مقیاس‌پذیر و توسعه‌پذیر*  
+World Wide Web, 2 (4) (1999), صفحات ۲۱۹-۲۲۹  
+
+[5] کریستوفر اولستون، مارک ناجورک:  
+*خزیدن در وب*  
+http://infolab.stanford.edu/~olston/publications/crawling_survey.pdf  
+
+[6] ۲۹٪ از سایت‌ها با مشکل محتوای تکراری مواجه هستند:  
+https://tinyurl.com/y6tmh55y  
+
+[7] رابین ام.او. و همکاران:  
+*اثر انگشت‌سازی با چندجمله‌ای‌های تصادفی*  
+مرکز تحقیقات فناوری محاسبات، آزمایشگاه محاسبات آیکن، دانشگاه (۱۹۸۱)  
+
+[8] بی. اچ. بلوم:  
+*مبادله فضا/زمان در کدگذاری هش با خطاهای مجاز*  
+Communications of the ACM، جلد ۱۳، شماره ۷، صفحات ۴۲۲–۴۲۶، ۱۹۷۰  
+
+[9] دونالد جی. پترسون:  
+*خزیدن در وب*  
+https://www.ics.uci.edu/~lopes/teaching/cs221W12/slides/Lecture05.pdf  
+
+[10] ال. پیج، اس. برین، آر. موتوانی، و تی. وینوگراد:  
+*رتبه‌بندی استنادی پیج‌رنک: نظم‌دهی به وب*  
+گزارش فنی، دانشگاه استنفورد، ۱۹۹۸  
+
+[11] برتون بلوم:  
+*مبادله فضا/زمان در کدگذاری هش با خطاهای مجاز*  
+Communications of the ACM، ۱۳(۷)، صفحات ۴۲۲–۴۲۶، ژوئیه ۱۹۷۰  
+
+[12] رندرینگ پویای گوگل:  
+https://developers.google.com/search/docs/guides/dynamic-rendering  
+
+[13] تی. اوروای، تی. لاورگن، و پی. فیلوچ:  
+*ردیابی اسپم وب با شباهت سبک پنهان*  
+در *Proceedings of the 2nd International Workshop on Adversarial Information Retrieval on the Web*، ۲۰۰۶  
+
+[14] اچ-تی. لی، دی. لئونارد، ایکس. وانگ، و دی. لوگویینوف:  
+*IRLbot: مقیاس‌پذیری تا ۶ میلیارد صفحه و فراتر از آن*  
+در *Proceedings of the 17th International World Wide Web Conference*، ۲۰۰۸  
+
+---  
+
+*توضیحات تخصصی:*  
+• *خزنده وب (Web Crawler)*: نرم‌افزاری که به صورت خودکار صفحات وب را جمع‌آوری و ایندکس می‌کند.  
+• *رندرینگ پویا (Dynamic Rendering)*: تکنیکی برای نمایش محتوای متفاوت به کاربران و موتورهای جستجو.

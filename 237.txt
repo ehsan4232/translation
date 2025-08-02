@@ -1,0 +1,12 @@
+**منابع مرجع**  
+
+[1] *آموزش RESTful*:  
+https://www.restapitutorial.com/index.html  
+
+[2] *فیلتر بلوم (Bloom filter)*:  
+https://en.wikipedia.org/wiki/Bloom_filter  
+
+---  
+
+**توضیحات:**  
+• *فیلتر بلوم (Bloom filter)*: یک ساختار داده احتمالاتی برای بررسی عضویت یک عنصر در یک مجموعه است.

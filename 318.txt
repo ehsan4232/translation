@@ -1,0 +1,15 @@
+**منابع مرجع**  
+
+[1] **نحوه عملکرد فید خبری**:  
+https://www.facebook.com/help/327131014036297/  
+
+[2] **پیشنهادهای دوستانِ دوستان در Neo4j و SQL Server**:  
+http://geekswithblogs.net/brendonpage/archive/2015/10/26/friend-of-friend-recommendations-with-neo4j.aspx  
+
+---  
+*توضیحات:*  
+• *فید خبری (News Feed)*: بخشی از شبکه‌های اجتماعی که محتوای به‌روزرسانی‌ها را نمایش می‌دهد.  
+• *Neo4j و SQL Server*: دو سیستم مدیریت پایگاه داده که برای تحلیل روابط شبکه‌ای و داده‌های رابطه‌ای استفاده می‌شوند.  
+
+ترجمه اصطلاحات تخصصی:  
+- *Friend of Friend recommendations* → پیشنهادهای دوستانِ دوستان

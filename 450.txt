@@ -1,0 +1,43 @@
+**منابع**  
+
+[1] آمار یوتیوب به صورت عددی:  
+https://www.omnicoreagency.com/youtube-statistics/  
+
+[2] جمع‌بندی مخاطبان یوتیوب در سال ۲۰۱۹:  
+https://blog.hubspot.com/marketing/youtube-demographics  
+
+[3] قیمت‌گذاری کلودفرانت:  
+https://aws.amazon.com/cloudfront/pricing/  
+
+[4] نتفلیکس روی AWS:  
+https://aws.amazon.com/solutions/case-studies/netflix/  
+
+[5] صفحه اصلی آکامای:  
+https://www.akamai.com/  
+
+[6] شیء باینری بزرگ (Binary Large Object):  
+https://en.wikipedia.org/wiki/Binary_large_object  
+
+[7] آنچه باید درباره پروتکل‌های استریمینگ بدانید:  
+https://www.dacast.com/blog/streaming-protocols/  
+
+[8] SVE: پردازش ویدیویی توزیع‌شده در مقیاس فیسبوک:  
+https://www.cs.princeton.edu/~wlloyd/papers/sve-sosp17.pdf  
+
+[9] معماری پردازش ویدیویی ویبو (به زبان چینی):  
+https://www.upyun.com/opentalk/399.html  
+
+[10] تفویض دسترسی با استفاده از امضای دسترسی مشترک (Shared Access Signature):  
+https://docs.microsoft.com/en-us/rest/api/storageservices/delegate-access-with-shared-access-signature  
+
+[11] سخنرانی درباره مقیاس‌پذیری یوتیوب توسط یکی از کارکنان اولیه آن:  
+https://www.youtube.com/watch?v=w5WVu624fY8  
+
+[12] درک ویژگی‌های اشتراک‌گذاری ویدیوهای کوتاه اینترنتی: یک مطالعه اندازه‌گیری مبتنی بر یوتیوب:  
+https://arxiv.org/pdf/0707.3670.pdf  
+
+[13] محبوبیت محتوا برای Open Connect:  
+https://netflixtechblog.com/content-popularity-for-open-connect-b86d56f613b  
+
+---  
+*توجه: برخی اصطلاحات فنی مانند **Binary Large Object**، **Shared Access Signature** و **Open Connect** به دلیل تخصصی بودن، به صورت ترکیبی (ترجمه + اصل انگلیسی) آورده شده‌اند.*

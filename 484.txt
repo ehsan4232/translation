@@ -1,0 +1,38 @@
+**منابع و مراجع**  
+
+[1] گوگل درایو:  
+https://www.google.com/drive/  
+
+[2] آپلود فایل در گوگل درایو:  
+https://developers.google.com/drive/api/v2/manage-uploads  
+
+[3] آمازون اس۳ (Amazon S3):  
+https://aws.amazon.com/s3  
+
+[4] همگام‌سازی تفاضلی (Differential Synchronization):  
+https://neil.fraser.name/writing/sync/  
+
+[5] ویدیوی توضیح همگام‌سازی تفاضلی:  
+https://www.youtube.com/watch?v=S2Hp_1jqpY8  
+
+[6] نحوه مقیاس‌دهی دراپ‌باکس (How We’ve Scaled Dropbox):  
+https://youtu.be/PE4gwstWhmc  
+
+[7] تریجل، ا.، و مکراس، پ. (۱۹۹۶). الگوریتم rsync.  
+
+[8] کتابخانه rsync (Librsync):  
+https://github.com/librsync/librsync  
+
+[9] اصول ACID (اتمیک بودن، سازگاری، انزوا، دوام):  
+https://en.wikipedia.org/wiki/ACID  
+
+[10] مقاله امنیتی دراپ‌باکس:  
+https://www.dropbox.com/static/business/resources/Security_Whitepaper.pdf  
+
+[11] سرویس آمازون اس۳ گلاسیر (Amazon S3 Glacier):  
+https://aws.amazon.com/glacier/faqs/  
+
+---  
+*توضیحات:*  
+- **همگام‌سازی تفاضلی (Differential Synchronization):** روشی برای به‌روزرسانی داده‌ها با حداقل تغییرات.  
+- **اصول ACID:** چهار ویژگی کلیدی در پایگاه‌داده‌ها برای تضمین صحت تراکنش‌ها.

@@ -1,0 +1,46 @@
+**منابع مرجع**  
+
+[1] پروتکل انتقال ابرمتن:  
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol  
+
+[2] آیا باید فراتر از پایگاه‌داده‌های رابطه‌ای بروید؟:  
+https://blog.teamtreehouse.com/should-you-go-beyond-relational-databases  
+
+[3] تکثیر (رپلیکیشن):  
+https://en.wikipedia.org/wiki/Replication_(computing)  
+
+[4] تکثیر چندسروری (مالتی مستر):  
+https://en.wikipedia.org/wiki/Multi-master_replication  
+
+[5] تکثیر خوشه‌ای NDB: تکثیر چندسروری و چرخشی:  
+https://dev.mysql.com/doc/refman/5.7/en/mysql-cluster-replication-multi-master.html  
+
+[6] راهبردهای کشینگ و نحوه انتخاب گزینه مناسب:  
+https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/  
+
+[7] آر. نیشتالا، "فیسبوک، مقیاس‌دهی ممکش در،" دهمین سمپوزیوم USENIX در طراحی و پیاده‌سازی سیستم‌های شبکه‌ای (NSDI ’13).  
+
+[8] نقطه شکست واحد:  
+https://en.wikipedia.org/wiki/Single_point_of_failure  
+
+[9] تحویل محتوای پویا در Amazon CloudFront:  
+https://aws.amazon.com/cloudfront/dynamic-content/  
+
+[10] پیکربندی جلسات چسبنده برای بالانس‌کننده بار کلاسیک:  
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-sticky-sessions.html  
+
+[11] فعال-فعال برای تاب‌آوری چندمنطقه‌ای:  
+https://netflixtechblog.com/active-active-for-multi-regional-resiliency-c47719f6685b  
+
+[12] نمونه‌های EC2 با حافظه بالا در آمازون:  
+https://aws.amazon.com/ec2/instance-types/high-memory/  
+
+[13] آنچه برای اجرای استک اورفلو لازم است:  
+http://nickcraver.com/blog/2013/11/22/what-it-takes-to-run-stack-overflow  
+
+[14] اساساً از NoSQL برای چه چیزی استفاده می‌کنید؟:  
+http://highscalability.com/blog/2010/12/6/what-the-heck-are-you-actually-using-nosql-for.html  
+
+---  
+
+*توجه: برخی اصطلاحات فنی مانند "رپلیکیشن"، "مالتی مستر"، و "کشینگ" به دلیل رواج در صنعت فناوری اطلاعات به صورت اصلی یا ترجمه‌شده آورده شده‌اند.*

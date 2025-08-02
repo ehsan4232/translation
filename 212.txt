@@ -1,0 +1,16 @@
+**منابع مرجع**  
+
+[1] شناسه یکتا جهانی (Universally unique identifier):  
+https://en.wikipedia.org/wiki/Universally_unique_identifier  
+
+[2] *سرورهای تیکت: کلیدهای اولیه یکتا توزیعشده با هزینه کم* (Ticket Servers: Distributed Unique Primary Keys on the Cheap):  
+https://code.flickr.net/2010/02/08/ticket-servers-distributed-unique-primary-keys-on-the-cheap/  
+
+[3] *معرفی اسنوفلیک* (Announcing Snowflake):  
+https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake.html  
+
+[4] پروتکل زمان شبکه (Network Time Protocol):  
+https://en.wikipedia.org/wiki/Network_Time_Protocol  
+
+---  
+*توضیحات درون پرانتز، معادل انگلیسی اصطلاحات تخصصی هستند.*

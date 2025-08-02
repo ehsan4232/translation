@@ -1,0 +1,31 @@
+**منابع و مراجع**  
+
+[1] **چرخه زندگی یک کوئری Typeahead**:  
+https://www.facebook.com/notes/facebook-engineering/the-life-of-a-typeahead-query/389105248919/  
+
+[2] **چگونه Prefixy را ساختیم: یک سرویس جستجوی پیشوندی مقیاس‌پذیر برای قدرت‌بخشی به تکمیل خودکار**:  
+https://medium.com/@prefixyteam/how-we-built-prefixy-a-scalable-prefix-search-service-for-powering-autocomplete-c20f98e2eff1  
+
+[3] **درخت هش پیشوندی (Prefix Hash Tree): یک ساختار داده ایندکس‌گذاری روی جداول هش توزیع‌شده**:  
+https://people.eecs.berkeley.edu/~sylvia/papers/pht.pdf  
+
+[4] **MongoDB (ویکی‌پدیا)**:  
+https://en.wikipedia.org/wiki/MongoDB  
+
+[5] **سوالات متداول یونیکد**:  
+https://www.unicode.org/faq/basic_q.html  
+
+[6] **Apache Hadoop**:  
+https://hadoop.apache.org/  
+
+[7] **Spark Streaming**:  
+https://spark.apache.org/streaming/  
+
+[8] **Apache Storm**:  
+https://storm.apache.org/  
+
+[9] **Apache Kafka**:  
+https://kafka.apache.org/documentation/  
+
+---  
+*تمامی لینک‌ها به منابع اصلی انگلیسی ارجاع داده شده‌اند.*
