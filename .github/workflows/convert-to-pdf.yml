@@ -1,0 +1,136 @@
+name: Convert MD to PDF
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  convert-to-pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install md-to-pdf
+      run: npm install -g md-to-pdf
+    
+    - name: Install fonts
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y fonts-firacode
+        
+    - name: Create PDF directory
+      run: mkdir -p pdf-output
+    
+    - name: Convert MD files to PDF
+      run: |
+        for file in *.md; do
+          if [ -f "$file" ]; then
+            echo "Converting $file..."
+            filename=$(basename "$file" .md)
+            
+            # Create custom CSS for GitHub style
+            cat > github-style.css << 'EOF'
+        body {
+          font-family: 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1.6;
+          color: #24292f;
+          max-width: 980px;
+          margin: 0 auto;
+          padding: 45px;
+          direction: rtl;
+          text-align: right;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+          margin-top: 24px;
+          margin-bottom: 16px;
+          font-weight: 600;
+          line-height: 1.25;
+          color: #1f2328;
+        }
+        
+        h1 {
+          font-size: 2em;
+          padding-bottom: .3em;
+          border-bottom: 1px solid #d8dee4;
+        }
+        
+        h2 {
+          font-size: 1.5em;
+          padding-bottom: .3em;
+          border-bottom: 1px solid #d8dee4;
+        }
+        
+        h3 {
+          font-size: 1.25em;
+        }
+        
+        blockquote {
+          margin: 0;
+          padding: 0 1em;
+          color: #656d76;
+          border-right: .25em solid #d8dee4;
+          background-color: #f6f8fa;
+          border-radius: 6px;
+          padding: 16px;
+        }
+        
+        code {
+          font-family: 'SFMono-Regular', Consolas, monospace;
+          font-size: 85%;
+          padding: .2em .4em;
+          background-color: #f6f8fa;
+          border-radius: 6px;
+        }
+        
+        pre {
+          font-family: 'SFMono-Regular', Consolas, monospace;
+          background-color: #f6f8fa;
+          border-radius: 6px;
+          padding: 16px;
+          overflow: auto;
+          direction: ltr;
+          text-align: left;
+        }
+        
+        ul, ol {
+          padding-right: 2em;
+        }
+        
+        table {
+          border-spacing: 0;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        table th, table td {
+          padding: 6px 13px;
+          border: 1px solid #d8dee4;
+        }
+        
+        table tr:nth-child(2n) {
+          background-color: #f6f8fa;
+        }
+        EOF
+            
+            # Convert with custom styling
+            md-to-pdf "$file" \
+              --pdf-options='{"format": "A4", "margin": {"top": "20mm", "right": "20mm", "bottom": "20mm", "left": "20mm"}}' \
+              --css-path=github-style.css \
+              --dest="pdf-output/${filename}.pdf" || echo "Failed to convert $file"
+          fi
+        done
+    
+    - name: Upload PDF files
+      uses: actions/upload-artifact@v3
+      with:
+        name: pdf-files
+        path: pdf-output/
