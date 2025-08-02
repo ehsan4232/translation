@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xepersian}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\settextfont{XB Niloofar}
+\setdigitfont{XB Niloofar}
+
+\title{پایگاه داده}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+با رشد تعداد کاربران، یک سرور کافی نیست و به چندین سرور نیاز داریم: یکی برای ترافیک وب/موبایل و دیگری برای پایگاه داده (شکل ۱-۳). جداسازی ترافیک وب/موبایل\footnote{وب تایر - Web Tier} و سرورهای پایگاه داده\footnote{دیتا تایر - Data Tier} امکان مقیاس‌پذیری مستقل آن‌ها را فراهم می‌کند.
+
+\section{کدام پایگاه داده را انتخاب کنیم؟}
+
+می‌توانید بین پایگاه داده‌های رابطه‌ای سنتی و غیررابطه‌ای یکی را انتخاب کنید. بیایید تفاوت‌های آن‌ها را بررسی کنیم.
+
+\subsection{پایگاه داده‌های رابطه‌ای}
+
+به این نوع پایگاه‌داده‌ها سیستم مدیریت پایگاه دادهٔ رابطه‌ای\footnote{RDBMS - Relational Database Management System} یا پایگاه دادهٔ SQL نیز گفته می‌شود. محبوب‌ترین نمونه‌های آن شامل MySQL، Oracle Database، PostgreSQL و غیره هستند.
+
+\begin{itemize}
+\item داده‌ها در این پایگاه‌ها به صورت جدول و سطر نمایش و ذخیره می‌شوند.
+\item می‌توانید از عملیات جوین\footnote{Join} در SQL برای ارتباط بین جداول مختلف استفاده کنید.
+\end{itemize}
+
+\subsection{پایگاه داده‌های غیررابطه‌ای}
+
+این نوع پایگاه‌ها با نام NoSQL نیز شناخته می‌شوند. نمونه‌های معروف آن CouchDB، Neo4j، Cassandra، HBase و Amazon DynamoDB هستند\footnote{منبع ۲}.
+
+این پایگاه‌ها به چهار دسته تقسیم می‌شوند:
+
+\begin{enumerate}
+\item ذخیره‌سازی کلید-مقدار\footnote{Key-Value Stores}
+\item ذخیره‌سازی گراف\footnote{Graph Stores}  
+\item ذخیره‌سازی ستونی\footnote{Column Stores}
+\item ذخیره‌سازی سند\footnote{Document Stores}
+\end{enumerate}
+
+معمولاً از عملیات جوین در پایگاه‌های غیررابطه‌ای پشتیبانی نمی‌شود.
+
+\section{کدام یک را انتخاب کنیم؟}
+
+برای اکثر توسعه‌دهندگان، پایگاه‌های دادهٔ رابطه‌ای بهترین گزینه هستند، چون بیش از ۴۰ سال سابقه دارند و عملکردشان به‌خوبی اثبات شده است. با این حال، اگر پایگاه‌های رابطه‌ای برای نیازهای خاص شما مناسب نباشند، بررسی گزینه‌های غیررابطه‌ای ضروری است.
+
+\textbf{پایگاه دادهٔ غیررابطه‌ای ممکن است گزینهٔ مناسبی باشد اگر:}
+
+\begin{itemize}
+\item برنامهٔ شما نیاز به تأخیر بسیار کم\footnote{Super-Low Latency} دارد.
+\item داده‌های شما بدون ساختار هستند یا هیچ رابطه‌ای بین آن‌ها وجود ندارد.
+\item فقط نیاز به سریالایز و دیسریالایز داده‌ها (مثل JSON، XML، YAML و غیره) دارید.
+\item نیاز به ذخیرهٔ حجم عظیمی از داده‌ها دارید.
+\end{itemize}
+
+\end{document}
