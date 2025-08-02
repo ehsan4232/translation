@@ -1,11 +1,19 @@
 \documentclass[12pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{xepersian}
+\usepackage{fontspec}
+\usepackage{polyglossia}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
 
-\settextfont{XB Niloofar}
-\setdigitfont{XB Niloofar}
+% Set up languages
+\setdefaultlanguage{arabic}
+\setotherlanguage{english}
+
+% Font setup with Vazir
+\newfontfamily\arabicfont[Script=Arabic]{Vazir}
+\newfontfamily\englishfont{Times New Roman}
+\setmainfont{Times New Roman}
 
 \title{مصاحبهٔ طراحی سیستم: راهنمای یک فرد داخل‌کاری}
 \author{الکس شو}
@@ -14,6 +22,8 @@
 \begin{document}
 
 \maketitle
+
+\begin{Arabic}
 
 \section*{اطلاعات کتاب}
 
@@ -29,21 +39,31 @@
 
 در صورت تمایل به اطلاع‌رسانی دربارهٔ انتشار فصل‌های جدید، لطفاً در لیست ایمیل ما عضو شوید:
 
+\end{Arabic}
+
 \url{https://bit.ly/3dtIcsE}
+
+\begin{Arabic}
 
 برای اطلاعات بیشتر، با آدرس زیر تماس بگیرید:
 
+\end{Arabic}
+
 \href{mailto:systemdesigninsider@gmail.com}{systemdesigninsider@gmail.com}
+
+\begin{Arabic}
 
 \textit{ویراستار:} پل سلیمان
 
 \section*{نکات ترجمه}
 
 \begin{itemize}
-\item \textit{System Design Interview} به «مصاحبهٔ طراحی سیستم» ترجمه شد.
-\item \textit{An Insider's Guide} به «راهنمای یک فرد داخل‌کاری» ترجمه شد تا مفهوم تخصصی بودن محتوا منتقل شود.
-\item نام شرکت‌ها\footnote{Twitter, Apple, etc.} و دانشگاه\footnote{Carnegie Mellon} به شکل اصلی باقی ماندند.
-\item \textit{M.S.} به «کارشناسی ارشد» ترجمه شد.
+\item System Design Interview به «مصاحبهٔ طراحی سیستم» ترجمه شد.
+\item An Insider's Guide به «راهنمای یک فرد داخل‌کاری» ترجمه شد تا مفهوم تخصصی بودن محتوا منتقل شود.
+\item نام شرکت‌ها (Twitter, Apple, etc.) و دانشگاه (Carnegie Mellon) به شکل اصلی باقی ماندند.
+\item M.S. به «کارشناسی ارشد» ترجمه شد.
 \end{itemize}
+
+\end{Arabic}
 
 \end{document}
