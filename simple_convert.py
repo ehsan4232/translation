@@ -1,6 +1,6 @@
 """
-تبدیل پیشرفته MD به DOCX با فرمت‌بندی کامل
-شامل: خطوط جدید، فونت‌های متفاوت، استایل‌های مختلف
+تبدیل اختصاصی فایل‌های MD با HTML به DOCX
+برای فایل‌های با فرمت <div dir="rtl"> و فونت Vazir
 """
 
 import os
@@ -12,17 +12,16 @@ def install_required_packages():
     """نصب کتابخانه‌های مورد نیاز"""
     try:
         import docx
-        from markdown import markdown
         from bs4 import BeautifulSoup
         return True
     except ImportError:
         print("📦 در حال نصب کتابخانه‌های مورد نیاز...")
-        os.system("pip install python-docx markdown beautifulsoup4")
+        os.system("pip install python-docx beautifulsoup4 lxml")
         print("✅ کتابخانه‌ها نصب شدند. لطفاً دوباره اجرا کنید.")
         return False
 
-def md_to_docx_advanced():
-    """تبدیل MD به DOCX با فرمت‌بندی پیشرفته"""
+def md_to_docx_custom():
+    """تبدیل اختصاصی MD به DOCX"""
     
     if not install_required_packages():
         return
@@ -31,8 +30,6 @@ def md_to_docx_advanced():
     from docx.shared import Inches, Pt, RGBColor
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.enum.style import WD_STYLE_TYPE
-    from docx.oxml.shared import OxmlElement, qn
-    from markdown import markdown
     from bs4 import BeautifulSoup
     
     # ایجاد پوشه خروجی
@@ -62,7 +59,7 @@ def md_to_docx_advanced():
             # ایجاد سند Word
             doc = Document()
             
-            # تنظیمات صفحه و RTL
+            # تنظیمات صفحه
             sections = doc.sections
             for section in sections:
                 section.page_width = Inches(8.5)
@@ -72,64 +69,79 @@ def md_to_docx_advanced():
                 section.top_margin = Inches(1)
                 section.bottom_margin = Inches(1)
             
-            # تنظیم استایل‌های مختلف
+            # تنظیم استایل‌ها با فونت Vazir
             def setup_styles(doc):
-                """تنظیم استایل‌های مختلف برای عناوین و متن"""
+                """تنظیم استایل‌ها با فونت Vazir"""
                 
-                # استایل عنوان اصلی (H1)
+                # استایل عنوان H1
                 try:
                     h1_style = doc.styles['Heading 1']
                 except:
                     h1_style = doc.styles.add_style('Heading 1', WD_STYLE_TYPE.PARAGRAPH)
                 
                 h1_font = h1_style.font
-                h1_font.name = 'B Nazanin'  # فونت فارسی
-                h1_font.size = Pt(18)
+                h1_font.name = 'Vazir'
+                h1_font.size = Pt(20)
                 h1_font.bold = True
                 h1_font.color.rgb = RGBColor(0, 51, 102)  # آبی تیره
                 h1_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                 h1_style.paragraph_format.space_after = Pt(12)
-                h1_style.paragraph_format.space_before = Pt(12)
+                h1_style.paragraph_format.space_before = Pt(18)
                 
-                # استایل عنوان فرعی (H2)
+                # استایل عنوان H2  
                 try:
                     h2_style = doc.styles['Heading 2']
                 except:
                     h2_style = doc.styles.add_style('Heading 2', WD_STYLE_TYPE.PARAGRAPH)
                 
                 h2_font = h2_style.font
-                h2_font.name = 'B Nazanin'
-                h2_font.size = Pt(16)
+                h2_font.name = 'Vazir'
+                h2_font.size = Pt(18)
                 h2_font.bold = True
-                h2_font.color.rgb = RGBColor(51, 51, 51)  # خاکستری تیره
+                h2_font.color.rgb = RGBColor(51, 102, 153)  # آبی متوسط
                 h2_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                 h2_style.paragraph_format.space_after = Pt(10)
-                h2_style.paragraph_format.space_before = Pt(10)
+                h2_style.paragraph_format.space_before = Pt(15)
                 
-                # استایل عنوان سطح سوم (H3)
+                # استایل عنوان H3
                 try:
                     h3_style = doc.styles['Heading 3']
                 except:
                     h3_style = doc.styles.add_style('Heading 3', WD_STYLE_TYPE.PARAGRAPH)
                 
                 h3_font = h3_style.font
-                h3_font.name = 'B Nazanin'
-                h3_font.size = Pt(14)
+                h3_font.name = 'Vazir'
+                h3_font.size = Pt(16)
                 h3_font.bold = True
                 h3_font.color.rgb = RGBColor(102, 102, 102)  # خاکستری
                 h3_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                 h3_style.paragraph_format.space_after = Pt(8)
-                h3_style.paragraph_format.space_before = Pt(8)
+                h3_style.paragraph_format.space_before = Pt(12)
+                
+                # استایل عنوان H4
+                try:
+                    h4_style = doc.styles['Heading 4']
+                except:
+                    h4_style = doc.styles.add_style('Heading 4', WD_STYLE_TYPE.PARAGRAPH)
+                
+                h4_font = h4_style.font
+                h4_font.name = 'Vazir'
+                h4_font.size = Pt(14)
+                h4_font.bold = True
+                h4_font.color.rgb = RGBColor(136, 136, 136)  # خاکستری روشن
+                h4_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                h4_style.paragraph_format.space_after = Pt(6)
+                h4_style.paragraph_format.space_before = Pt(10)
                 
                 # استایل متن عادی
                 normal_style = doc.styles['Normal']
                 normal_font = normal_style.font
-                normal_font.name = 'B Nazanin'
+                normal_font.name = 'Vazir'
                 normal_font.size = Pt(12)
-                normal_font.color.rgb = RGBColor(0, 0, 0)  # مشکی
+                normal_font.color.rgb = RGBColor(0, 0, 0)
                 normal_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                 normal_style.paragraph_format.line_spacing = 1.2
-                normal_style.paragraph_format.space_after = Pt(6)
+                normal_style.paragraph_format.space_after = Pt(8)
                 
                 # استایل نقل قول
                 try:
@@ -138,14 +150,14 @@ def md_to_docx_advanced():
                     quote_style = doc.styles.add_style('Quote', WD_STYLE_TYPE.PARAGRAPH)
                 
                 quote_font = quote_style.font
-                quote_font.name = 'B Nazanin'
+                quote_font.name = 'Vazir'
                 quote_font.size = Pt(11)
                 quote_font.italic = True
-                quote_font.color.rgb = RGBColor(85, 85, 85)  # خاکستری تیره
+                quote_font.color.rgb = RGBColor(85, 85, 85)
                 quote_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                 quote_style.paragraph_format.left_indent = Inches(0.5)
-                quote_style.paragraph_format.space_after = Pt(6)
-                quote_style.paragraph_format.space_before = Pt(6)
+                quote_style.paragraph_format.space_after = Pt(8)
+                quote_style.paragraph_format.space_before = Pt(8)
                 
                 # استایل کد
                 try:
@@ -156,38 +168,44 @@ def md_to_docx_advanced():
                 code_font = code_style.font
                 code_font.name = 'Consolas'
                 code_font.size = Pt(10)
-                code_font.color.rgb = RGBColor(51, 51, 51)
+                code_font.color.rgb = RGBColor(139, 69, 19)
                 code_style.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-                code_style.paragraph_format.space_after = Pt(6)
-                code_style.paragraph_format.space_before = Pt(6)
+                code_style.paragraph_format.space_after = Pt(8)
+                code_style.paragraph_format.space_before = Pt(8)
             
             setup_styles(doc)
             
-            # پردازش خط به خط برای حفظ فرمت
-            def process_markdown_lines(md_content):
-                """پردازش خط به خط محتوای markdown"""
-                lines = md_content.split('\n')
+            # حذف HTML و پردازش محتوا
+            def process_content(content):
+                """پردازش محتوای MD با HTML"""
                 
-                for line in lines:
+                # حذف تگ‌های HTML اضافی
+                content = re.sub(r'<div[^>]*>', '', content)
+                content = re.sub(r'</div>', '', content)
+                
+                # تقسیم به خطوط
+                lines = content.split('\n')
+                
+                for line_num, line in enumerate(lines):
                     line = line.strip()
                     
-                    # خط خالی
+                    # خط خالی - اضافه کردن فاصله
                     if not line:
                         doc.add_paragraph()
                         continue
                     
                     # عناوین
                     if line.startswith('# '):
-                        heading = doc.add_heading(line[2:].strip(), level=1)
+                        doc.add_heading(line[2:].strip(), level=1)
                         continue
                     elif line.startswith('## '):
-                        heading = doc.add_heading(line[3:].strip(), level=2)
+                        doc.add_heading(line[3:].strip(), level=2)
                         continue
                     elif line.startswith('### '):
-                        heading = doc.add_heading(line[4:].strip(), level=3)
+                        doc.add_heading(line[4:].strip(), level=3)
                         continue
                     elif line.startswith('#### '):
-                        heading = doc.add_heading(line[5:].strip(), level=4)
+                        doc.add_heading(line[5:].strip(), level=4)
                         continue
                     
                     # نقل قول
@@ -197,13 +215,22 @@ def md_to_docx_advanced():
                         continue
                     
                     # کد
-                    elif line.startswith('```') or line.startswith('    '):
-                        if line.startswith('```'):
-                            code_text = line[3:].strip()
-                        else:
-                            code_text = line[4:]
-                        if code_text:
-                            p = doc.add_paragraph(code_text, style='Code')
+                    elif line.startswith('```'):
+                        # کد بلاک - خط بعدی رو هم بخون
+                        if line_num + 1 < len(lines):
+                            code_content = []
+                            i = line_num + 1
+                            while i < len(lines) and not lines[i].strip().startswith('```'):
+                                code_content.append(lines[i])
+                                i += 1
+                            if code_content:
+                                p = doc.add_paragraph('\n'.join(code_content), style='Code')
+                        continue
+                    
+                    elif line.startswith('    ') and len(line) > 4:
+                        # کد با ۴ اسپیس
+                        code_text = line[4:]
+                        p = doc.add_paragraph(code_text, style='Code')
                         continue
                     
                     # لیست با نقطه
@@ -213,7 +240,7 @@ def md_to_docx_advanced():
                         p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
                         continue
                     
-                    # لیست با شماره
+                    # لیست شماره‌دار
                     elif re.match(r'^\d+\. ', line):
                         list_text = re.sub(r'^\d+\. ', '', line).strip()
                         p = doc.add_paragraph(list_text, style='List Number')
@@ -224,38 +251,53 @@ def md_to_docx_advanced():
                     elif line.startswith('---') or line.startswith('***'):
                         p = doc.add_paragraph()
                         p.add_run('─' * 50)
+                        p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
                         continue
                     
                     # متن عادی
                     else:
-                        # پردازش متن با فرمت‌های inline
-                        p = doc.add_paragraph()
-                        p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-                        
-                        # پردازش bold, italic, code
-                        parts = re.split(r'(\*\*.*?\*\*|\*.*?\*|`.*?`)', line)
-                        
-                        for part in parts:
-                            if part.startswith('**') and part.endswith('**'):
-                                # Bold
-                                run = p.add_run(part[2:-2])
-                                run.bold = True
-                            elif part.startswith('*') and part.endswith('*'):
-                                # Italic
-                                run = p.add_run(part[1:-1])
-                                run.italic = True
-                            elif part.startswith('`') and part.endswith('`'):
-                                # Inline code
-                                run = p.add_run(part[1:-1])
-                                run.font.name = 'Consolas'
-                                run.font.size = Pt(10)
-                            else:
-                                # متن عادی
-                                if part.strip():
-                                    p.add_run(part)
+                        # چک کن اگه خط با ** شروع میشه (bold)
+                        if line.startswith('**') and line.endswith('**') and len(line) > 4:
+                            # تیتر bold
+                            p = doc.add_paragraph()
+                            p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                            run = p.add_run(line[2:-2])
+                            run.bold = True
+                            run.font.name = 'Vazir'
+                            run.font.size = Pt(13)
+                        else:
+                            # متن عادی با پردازش inline formatting
+                            p = doc.add_paragraph()
+                            p.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+                            
+                            # پردازش bold, italic, code
+                            parts = re.split(r'(\*\*.*?\*\*|\*.*?\*|`.*?`)', line)
+                            
+                            for part in parts:
+                                if part.startswith('**') and part.endswith('**') and len(part) > 4:
+                                    # Bold
+                                    run = p.add_run(part[2:-2])
+                                    run.bold = True
+                                    run.font.name = 'Vazir'
+                                elif part.startswith('*') and part.endswith('*') and len(part) > 2:
+                                    # Italic
+                                    run = p.add_run(part[1:-1])
+                                    run.italic = True
+                                    run.font.name = 'Vazir'
+                                elif part.startswith('`') and part.endswith('`') and len(part) > 2:
+                                    # Inline code
+                                    run = p.add_run(part[1:-1])
+                                    run.font.name = 'Consolas'
+                                    run.font.size = Pt(10)
+                                    run.font.color.rgb = RGBColor(139, 69, 19)
+                                else:
+                                    # متن عادی
+                                    if part.strip():
+                                        run = p.add_run(part)
+                                        run.font.name = 'Vazir'
             
             # پردازش محتوا
-            process_markdown_lines(md_content)
+            process_content(md_content)
             
             # ذخیره سند
             output_file = output_dir / f"{Path(md_file).stem}.docx"
@@ -273,13 +315,14 @@ def md_to_docx_advanced():
     print(f"❌ ناموفق: {failed} فایل")
     print(f"📁 فایل‌ها در پوشه {output_dir} ذخیره شدند.")
     print(f"\n📝 ویژگی‌های اعمال شده:")
-    print(f"   • فونت فارسی B Nazanin برای متن")
-    print(f"   • اندازه‌های مختلف برای عناوین (H1: 18pt, H2: 16pt, H3: 14pt)")
-    print(f"   • رنگ‌های متفاوت برای هر سطح")
-    print(f"   • حفظ خطوط جدید و فاصله‌گذاری")
+    print(f"   • فونت Vazir برای همه عناوین و متن")
+    print(f"   • اندازه‌های مختلف: H1(20pt), H2(18pt), H3(16pt), H4(14pt)")
+    print(f"   • رنگ‌های متفاوت برای هر سطح عنوان")
+    print(f"   • حفظ دقیق خطوط جدید و فاصله‌گذاری")
     print(f"   • پشتیبانی از RTL")
+    print(f"   • پردازش صحیح HTML موجود در MD")
 
 if __name__ == "__main__":
-    print("🚀 تبدیل پیشرفته MD به DOCX")
-    print("=" * 50)
-    md_to_docx_advanced()
+    print("🚀 تبدیل اختصاصی MD به DOCX (فونت Vazir)")
+    print("=" * 60)
+    md_to_docx_custom()
