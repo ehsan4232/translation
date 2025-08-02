@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xepersian}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\settextfont{XB Niloofar}
+\setdigitfont{XB Niloofar}
+
+\title{جریان درخواست‌ها و منابع ترافیک}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{جریان درخواست‌ها}
+
+\begin{enumerate}
+\item کاربران از طریق نام‌دامنه‌ها مانند \texttt{api.mysite.com} به وب‌سایت‌ها دسترسی پیدا می‌کنند. معمولاً سیستم نام‌دامنه\footnote{DNS - Domain Name System} یک سرویس پولی است که توسط ارائه‌دهندگان شخص ثالث ارائه می‌شود و روی سرورهای ما میزبانی نمی‌شود.
+
+\item آدرس پروتکل اینترنت\footnote{IP - Internet Protocol} به مرورگر یا اپلیکیشن موبایل بازگردانده می‌شود. در مثال ما، آدرس IP معادل ۱۵.۱۲۵.۲۳.۲۱۴ برگشت داده می‌شود.
+
+\item پس از دریافت آدرس IP، درخواست‌های پروتکل انتقال ابرمتن\footnote{HTTP - Hypertext Transfer Protocol} مستقیماً به وب‌سرور شما ارسال می‌شوند.
+
+\item وب‌سرور صفحات HTML یا پاسخ‌های JSON را برای نمایش بازمی‌گرداند.
+\end{enumerate}
+
+\section{منابع ترافیک}
+
+ترافیک ورودی به وب‌سرور شما از دو منبع اصلی تأمین می‌شود:
+
+\subsection{وب اپلیکیشن}
+از ترکیبی از زبان‌های سمت سرور (مانند جاوا، پایتون و غیره) برای پردازش منطق کسب‌وکار، ذخیره‌سازی و... استفاده می‌کند و زبان‌های سمت کلاینت (HTML و جاوااسکریپت) برای نمایش محتوا به کار می‌روند.
+
+\subsection{اپلیکیشن موبایل}
+پروتکل HTTP، پروتکل ارتباطی بین اپلیکیشن موبایل و وب‌سرور است. فرمت رایج پاسخ API، نشانه‌گذاری شیء جاوااسکریپت\footnote{JSON - JavaScript Object Notation} است که به دلیل سادگی برای انتقال داده استفاده می‌شود.
+
+مثال زیر یک پاسخ API با فرمت JSON را نشان می‌دهد:
+
+\begin{latin}
+\begin{lstlisting}
+GET /users/12 – دریافت شیء کاربر مربوط به شناسه ۱۲
+\end{lstlisting}
+\end{latin}
+
+\end{document}
