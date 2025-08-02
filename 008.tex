@@ -1,0 +1,29 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xepersian}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\settextfont{XB Niloofar}
+\setdigitfont{XB Niloofar}
+
+\title{راه‌اندازی تک سرور}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\textit{سفر هزار مایل با یک گام آغاز می‌شود}، و ساخت یک سیستم پیچیده نیز تفاوتی ندارد. برای شروع با چیزی ساده، همه چیز روی یک سرور واحد اجرا می‌شود. شکل ۱-۱ نمایی از یک راه‌اندازی تک سرور\footnote{Single server setup} را نشان می‌دهد که در آن همه چیز — از جمله وب‌اپلیکیشن، پایگاه داده، کش و غیره — روی یک سرور اجرا می‌شود.
+
+برای درک این ساختار، بررسی جریان درخواست‌ها\footnote{Request flow} و منبع ترافیک\footnote{Traffic source} مفید است. ابتدا نگاهی به جریان درخواست‌ها بیندازیم (شکل ۱-۲).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{001.png}
+\caption{راه‌اندازی تک سرور}
+\label{fig:single-server}
+\end{figure}
+
+\end{document}
