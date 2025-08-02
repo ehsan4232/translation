@@ -1,0 +1,38 @@
+name: Convert MD to DOCX
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Install Pandoc
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+    
+    - name: Convert MD files to DOCX
+      run: |
+        mkdir -p docx-output
+        for file in *.md; do
+          if [ -f "$file" ]; then
+            filename=$(basename "$file" .md)
+            pandoc "$file" -o "docx-output/${filename}.docx" \
+              --metadata dir=rtl \
+              --reference-doc=template.docx 2>/dev/null || \
+              pandoc "$file" -o "docx-output/${filename}.docx" \
+              --metadata dir=rtl
+          fi
+        done
+    
+    - name: Upload DOCX files
+      uses: actions/upload-artifact@v3
+      with:
+        name: docx-files
+        path: docx-output/
