@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{Vazir}
+\usepackage{polyglossia}
+\setdefaultlanguage{persian}
+\setotherlanguage{english}
+\usepackage{bidi}
+
+\begin{document}
+
+\section{توضیح فرآیند دسترسی به وب‌سایت‌ها}
+\subsection{مراحل کلی}
+\begin{enumerate}
+    \item کاربران از طریق نام‌دامنه‌ها (مثل \lr{api.mysite.com}) به وب‌سایت‌ها دسترسی پیدا می‌کنند. سیستم نام‌دامنه (\lr{DNS}) معمولاً یک سرویس پولی است که توسط ارائه‌دهندگان شخص ثالث ارائه می‌شود و روی سرورهای ما میزبانی نمی‌شود.
+    
+    \item نشانی پروتکل اینترنت (\lr{IP}) به مرورگر یا برنامه موبایل بازگردانده می‌شود. در مثال ما، نشانی \lr{15.125.23.214} برگردانده می‌شود.
+    
+    \item پس از به‌دست آوردن نشانی \lr{IP}، درخواست‌های پروتکل انتقال ابرمتن (\lr{HTTP}) مستقیماً به وب‌سرور شما ارسال می‌شوند.
+    
+    \item وب‌سرور صفحات \lr{HTML} یا پاسخ‌های \lr{JSON} را برای نمایش بازمی‌گرداند.
+\end{enumerate}
+
+\subsection{منبع ترافیک}
+ترافیک وب‌سرور شما از دو منبع اصلی می‌آید:
+\begin{itemize}
+    \item \textbf{برنامه وب}: از ترکیبی از زبان‌های سمت سرور (مثل جاوا، پایتون و غیره) برای پردازش منطق کسب‌وکار، ذخیره‌سازی و غیره استفاده می‌کند و از زبان‌های سمت کاربر (\lr{HTML} و جاوااسکریپت) برای نمایش بهره می‌برد.
+    
+    \item \textbf{برنامه موبایل}: پروتکل \lr{HTTP} پروتکل ارتباطی بین برنامه موبایل و وب‌سرور است. فرمت \lr{JSON} به دلیل سادگی، معمولاً برای پاسخ \lr{API} و انتقال داده استفاده می‌شود.
+\end{itemize}
+
+\subsection{مثال}
+مثالی از پاسخ \lr{API} به فرمت \lr{JSON}:
+\begin{latin}
+\begin{verbatim}
+GET /users/12 – Retrieve user object for id = 12
+\end{verbatim}
+\end{latin}
+
+\section*{پانویس}
+\begin{itemize}
+    \item \lr{DNS: Domain Name System}
+    \item \lr{IP: Internet Protocol}
+    \item \lr{HTTP: Hypertext Transfer Protocol}
+    \item \lr{JSON: JavaScript Object Notation}
+\end{itemize}
+
+\end{document}

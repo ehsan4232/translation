@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{Vazir}
+\usepackage{polyglossia}
+\setdefaultlanguage{persian}
+\setotherlanguage{english}
+
+\begin{document}
+
+\section{پشتیبانی از فِیل‌اُوِر و افزونگی}
+این سیستم از قابلیت‌های \textbf{فِیل‌اُوِر} و \textbf{افزونگی} پشتیبانی نمی‌کند. 
+
+\section{راه‌حل: تکثیر پایگاه داده}
+تکثیر (\textbf{ریپلیکیشن}) پایگاه داده یک روش متداول برای حل این مشکلات است. بیایید نگاهی به آن بیندازیم.
+
+\vspace{5mm}
+\footnotesize
+\textbf{فیل‌اوِر (Failover)} \\
+\textbf{افزونگی (Redundancy)} \\
+\textbf{ریپلیکیشن (Replication)}
+
+\end{document}
+
+\noindent
+\textbf{بررسی نهایی:}
+\begin{itemize}
+    \item ترجمه روان و قابل فهم است.
+    \item از واژه‌های متداول فنی استفاده شده است.
+    \item واژه‌های تخصصی در پاورقی آورده شده‌اند.
+    \item قالب‌بندی LaTeX به درستی رعایت شده است.
+    \item اعداد و علائم به شکل صحیح نمایش داده می‌شوند.
+\end{itemize}

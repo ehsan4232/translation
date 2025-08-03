@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{xepersian}
+\settextfont{Vazir}
+
+\begin{document}
+
+\title{سیستم طراحی مصاحبه: راهنمای یک فرد داخلی}
+\author{}
+\date{}
+\maketitle
+
+\section*{پیش‌گفتار}
+\section{فصل ۱: مقیاس‌پذیری از صفر تا میلیون‌ها کاربر}
+\section{فصل ۲: تخمین‌های سریع (Back-of-the-envelope)}
+\section{فصل ۳: چارچوبی برای مصاحبه‌های طراحی سیستم}
+\section{فصل ۴: طراحی یک محدودکننده نرخ (Rate Limiter)}
+\section{فصل ۵: طراحی هش سازگار (Consistent Hashing)}
+\section{فصل ۶: طراحی یک ذخیره‌سازی کلید-مقدار (Key-Value Store)}
+\section{فصل ۷: طراحی یک تولیدکننده شناسه منحصربه‌فرد در سیستم‌های توزیع‌شده}
+\section{فصل ۸: طراحی یک کوتاه‌کننده لینک (URL Shortener)}
+\section{فصل ۹: طراحی یک خزنده وب (Web Crawler)}
+\section{فصل ۱۰: طراحی یک سیستم اطلاع‌رسانی (Notification System)}
+\section{فصل ۱۱: طراحی یک سیستم فید خبری (News Feed System)}
+\section{فصل ۱۲: طراحی یک سیستم چت}
+\section{فصل ۱۳: طراحی یک سیستم تکمیل خودکار جستجو (Search Autocomplete)}
+\section{فصل ۱۴: طراحی یوتیوب}
+\section{فصل ۱۵: طراحی گوگل درایو}
+\section{فصل ۱۶: یادگیری ادامه دارد}
+\section*{سخن پایانی}
+
+\end{document}
+
+\vspace{1cm}
+\footnotesize
+\begin{itemize}
+    \item[Rate Limiter:] محدودکننده نرخ
+    \item[Consistent Hashing:] هش سازگار
+    \item[Key-Value Store:] ذخیره‌سازی کلید-مقدار
+    \item[URL Shortener:] کوتاه‌کننده لینک
+    \item[Web Crawler:] خزنده وب
+    \item[Notification System:] سیستم اطلاع‌رسانی
+    \item[News Feed System:] سیستم فید خبری
+    \item[Search Autocomplete:] تکمیل خودکار جستجو
+\end{itemize}

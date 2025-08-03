@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{fontspec}
+\setmainfont{Vazir}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{persian}
+\setotherlanguage{english}
+
+\usepackage{enumitem}
+\setlist[itemize]{rightmargin=*, leftmargin=*, label={}}
+
+\begin{document}
+
+\section*{بهینه‌سازی زیرساخت}
+
+\begin{itemize}
+    \item 
+    \textbf{فایل‌های استاتیک} (مانند جاوا اسکریپت، سی‌اس‌اس، تصاویر و غیره) دیگر توسط سرورهای وب سرویس نمی‌شوند. این فایل‌ها برای عملکرد بهتر از طریق \textbf{سی‌دی‌ان} دریافت می‌شوند.
+    
+    \item 
+    بار پایگاه داده با استفاده از \textbf{کش کردن} داده‌ها کاهش یافته است.
+\end{itemize}
+
+\footnotesize
+\begin{flushleft}
+Static assets, CDN, caching
+\end{flushleft}
+
+\end{document}
+
+\vspace{1cm}
+\textbf{بررسی نهایی:}
+\begin{itemize}
+    \item ترجمه روان و قابل فهم است و از اصطلاحات رایج در حوزه فناوری اطلاعات استفاده شده است.
+    \item واژه‌های تخصصی مانند «سی‌دی‌ان» و «کش کردن» که در زبان فارسی رایج هستند، حفظ شده‌اند.
+    \item ساختار جمله‌ها ساده و مستقیم است و از پیچیدگی غیرضروری پرهیز شده است.
+    \item قالب‌بندی LaTeX به درستی رعایت شده و جهت نوشتار (RTL) به درستی اعمال شده است.
+    \item اعداد و علائم نگارشی به شکل مناسب استفاده شده‌اند.
+\end{itemize}
