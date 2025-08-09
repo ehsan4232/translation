@@ -1,0 +1,19 @@
+\section{فهرست مطالب مصاحبه‌ی طراحی سیستم: راهنمای یک متخصص}
+\subsection{پیش‌گفتار}
+\subsection{فصل ۱: مقیاس‌پذیری از صفر تا میلیون‌ها کاربر}
+\subsection{فصل ۲: محاسبات سرانگشتی}
+\subsection{فصل ۳: چارچوبی برای مصاحبه‌های طراحی سیستم}
+\subsection{فصل ۴: طراحی محدودکننده‌ی نرخ\footnote{\lr{Rate Limiter}}}
+\subsection{فصل ۵: طراحی هش یکنواخت\footnote{\lr{Consistent Hashing}}}
+\subsection{فصل ۶: طراحی ذخیره‌ساز کلید\-مقدار\footnote{\lr{Key-Value Store}}}
+\subsection{فصل ۷: طراحی تولیدکننده‌ی شناسه‌ی یکتا در سیستم‌های توزیع‌شده}
+\subsection{فصل ۸: طراحی سرویس کوتاه‌کننده‌ی لینک}
+\subsection{فصل ۹: طراحی خزنده‌ی وب}
+\subsection{فصل ۱۰: طراحی سامانه‌ی اعلانات}
+\subsection{فصل ۱۱: طراحی سامانه‌ی خوراک خبری}
+\subsection{فصل ۱۲: طراحی سامانه‌ی گفت‌وگو}
+\subsection{فصل ۱۳: طراحی سامانه‌ی تکمیل خودکار جستجو}
+\subsection{فصل ۱۴: طراحی \lr{YouTube}}
+\subsection{فصل ۱۵: طراحی \lr{Google Drive}}
+\subsection{فصل ۱۶: یادگیری ادامه دارد}
+\subsection{سخن پایانی}

@@ -1,0 +1,1 @@
+3. The bloom filter is used to figure out which SSTables might contain the key. 4. SSTables return the result of the data set. 5. The result of the data set is returned to the client.

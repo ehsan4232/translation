@@ -1,0 +1,19 @@
+\section{فهرست مطالب مصاحبه طراحی سیستم: راهنمای یک فرد داخلی}
+\subsection{پیش‌گفتار}
+\subsection{فصل ۱: مقیاس‌پذیری از صفر تا میلیون‌ها کاربر}
+\subsection{فصل ۲: تخمین‌های سرانگشتی}
+\subsection{فصل ۳: چارچوبی برای مصاحبه‌های طراحی سیستم}
+\subsection{فصل ۴: طراحی یک محدودکننده نرخ}
+\subsection{فصل ۵: طراحی هش سازگار\footnote{\lr{Consistent Hashing}}}
+\subsection{فصل ۶: طراحی یک مخزن کلید\-مقدار\footnote{\lr{Key-Value Store}}}
+\subsection{فصل ۷: طراحی یک تولیدکننده شناسه منحصربه‌فرد در سیستم‌های توزیع‌شده}
+\subsection{فصل ۸: طراحی یک کوتاه‌کننده آدرس اینترنتی}
+\subsection{فصل ۹: طراحی یک خزنده وب}
+\subsection{فصل ۱۰: طراحی یک سیستم اطلاع‌رسانی}
+\subsection{فصل ۱۱: طراحی یک سیستم فید خبری}
+\subsection{فصل ۱۲: طراحی یک سیستم چت}
+\subsection{فصل ۱۳: طراحی یک سیستم تکمیل خودکار جستجو}
+\subsection{فصل ۱۴: طراحی \lr{YouTube}}
+\subsection{فصل ۱۵: طراحی \lr{Google Drive}}
+\subsection{فصل ۱۶: یادگیری ادامه دارد}
+\subsection{سخن پایانی}

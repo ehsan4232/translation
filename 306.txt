@@ -1,0 +1,1 @@
+• User: a user sends a request to retrieve her news feed. The request looks like this: / v1/me/feed. • Load balancer: load balancer redirects traffic to web servers. • Web servers: web servers route requests to newsfeed service. • Newsfeed service: news feed service fetches news feed from the cache. • Newsfeed cache: store news feed IDs needed to render the news feed.

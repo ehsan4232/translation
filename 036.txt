@@ -1,0 +1,1 @@
+In this stateless architecture, HTTP requests from users can be sent to any web servers, which fetch state data from a shared data store. State data is stored in a shared data store and kept out of web servers. A stateless system is simpler, more robust, and scalable. Figure 1-14 shows the updated design with a stateless web tier.
