@@ -1,19 +1,39 @@
-\section{فهرست مطالب مصاحبه‌ی طراحی سیستم: راهنمای یک متخصص}
-\subsection{پیش‌گفتار}
-\subsection{فصل ۱: مقیاس‌پذیری از صفر تا میلیون‌ها کاربر}
-\subsection{فصل ۲: محاسبات سرانگشتی}
-\subsection{فصل ۳: چارچوبی برای مصاحبه‌های طراحی سیستم}
-\subsection{فصل ۴: طراحی محدودکننده‌ی نرخ\footnote{\lr{Rate Limiter}}}
-\subsection{فصل ۵: طراحی هش یکنواخت\footnote{\lr{Consistent Hashing}}}
-\subsection{فصل ۶: طراحی ذخیره‌ساز کلید\-مقدار\footnote{\lr{Key-Value Store}}}
-\subsection{فصل ۷: طراحی تولیدکننده‌ی شناسه‌ی یکتا در سیستم‌های توزیع‌شده}
-\subsection{فصل ۸: طراحی سرویس کوتاه‌کننده‌ی لینک}
-\subsection{فصل ۹: طراحی خزنده‌ی وب}
-\subsection{فصل ۱۰: طراحی سامانه‌ی اعلانات}
-\subsection{فصل ۱۱: طراحی سامانه‌ی خوراک خبری}
-\subsection{فصل ۱۲: طراحی سامانه‌ی گفت‌وگو}
-\subsection{فصل ۱۳: طراحی سامانه‌ی تکمیل خودکار جستجو}
-\subsection{فصل ۱۴: طراحی \lr{YouTube}}
-\subsection{فصل ۱۵: طراحی \lr{Google Drive}}
-\subsection{فصل ۱۶: یادگیری ادامه دارد}
-\subsection{سخن پایانی}
+\section{فهرست مطالب}
+
+\subsection{مصاحبه طراحی سیستم: راهنمای جامع}
+
+پیش‌گفتار
+
+\textbf{فصل ۱:} مقیاس‌پذیری از صفر تا میلیون‌ها کاربر\footnote{\lr{Scale from Zero to Millions of Users}}
+
+\textbf{فصل ۲:} تخمین‌های سرانگشتی\footnote{\lr{Back-of-the-Envelope Estimation}}
+
+\textbf{فصل ۳:} چارچوبی برای مصاحبه‌های طراحی سیستم
+
+\textbf{فصل ۴:} طراحی محدودکننده نرخ\footnote{\lr{Rate Limiter}}
+
+\textbf{فصل ۵:} طراحی هش‌بندی یکنواخت\footnote{\lr{Consistent Hashing}}
+
+\textbf{فصل ۶:} طراحی ذخیره‌ساز کلید-مقدار\footnote{\lr{Key-Value Store}}
+
+\textbf{فصل ۷:} طراحی تولیدکننده شناسه یکتا در سیستم‌های توزیع‌شده
+
+\textbf{فصل ۸:} طراحی کوتاه‌کننده \lr{URL}
+
+\textbf{فصل ۹:} طراحی خزنده وب\footnote{\lr{Web Crawler}}
+
+\textbf{فصل ۱۰:} طراحی سیستم اعلان\footnote{\lr{Notification System}}
+
+\textbf{فصل ۱۱:} طراحی سیستم خوراک خبری\footnote{\lr{News Feed System}}
+
+\textbf{فصل ۱۲:} طراحی سیستم چت
+
+\textbf{فصل ۱۳:} طراحی سیستم تکمیل خودکار جستجو
+
+\textbf{فصل ۱۴:} طراحی \lr{YouTube}
+
+\textbf{فصل ۱۵:} طراحی \lr{Google Drive}
+
+\textbf{فصل ۱۶:} ادامه یادگیری
+
+پس‌گفتار
