@@ -3,11 +3,11 @@
 \subsection{فصل ۱: مقیاس‌پذیری از صفر تا میلیون‌ها کاربر}
 \subsection{فصل ۲: محاسبات سرانگشتی}
 \subsection{فصل ۳: چارچوبی برای مصاحبه‌های طراحی سیستم}
-\subsection{فصل ۴: طراحی محدودکننده‌ی نرخ\footnotemark}
+\subsection{فصل ۴: طراحی محدودکننده‌ی نرخ\protect\footnotemark}
 \footnotetext{\lr{Rate Limiter}}
-\subsection{فصل ۵: طراحی هش یکنواخت\footnotemark}
+\subsection{فصل ۵: طراحی هش یکنواخت\protect\footnotemark}
 \footnotetext{\lr{Consistent Hashing}}
-\subsection{فصل ۶: طراحی ذخیره‌ساز کلید-مقدار\footnotemark}
+\subsection{فصل ۶: طراحی ذخیره‌ساز کلید-مقدار\protect\footnotemark}
 \footnotetext{\lr{Key-Value Store}}
 \subsection{فصل ۷: طراحی تولیدکننده‌ی شناسه‌ی یکتا در سیستم‌های توزیع‌شده}
 \subsection{فصل ۸: طراحی سرویس کوتاه‌کننده‌ی لینک}
