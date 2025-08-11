@@ -4,10 +4,10 @@
 \subsection{فصل ۲: تخمین‌های سرانگشتی}
 \subsection{فصل ۳: چارچوبی برای مصاحبه‌های طراحی سیستم}
 \subsection{فصل ۴: طراحی یک محدودکننده نرخ}
-\subsection{فصل ۵: طراحی هش سازگار}
-هش سازگار\footnote{\lr{Consistent Hashing}} یکی از مفاهیم کلیدی در سیستم‌های توزیع‌شده است.
-\subsection{فصل ۶: طراحی یک مخزن کلید-مقدار}
-مخزن کلید-مقدار\footnote{\lr{Key-Value Store}} برای ذخیره‌سازی داده‌ها استفاده می‌شود.
+\subsection{فصل ۵: طراحی هش سازگار\footnotemark}
+\footnotetext{\lr{Consistent Hashing}}
+\subsection{فصل ۶: طراحی یک مخزن کلید-مقدار\footnotemark}
+\footnotetext{\lr{Key-Value Store}}
 \subsection{فصل ۷: طراحی یک تولیدکننده شناسه منحصربه‌فرد در سیستم‌های توزیع‌شده}
 \subsection{فصل ۸: طراحی یک کوتاه‌کننده آدرس اینترنتی}
 \subsection{فصل ۹: طراحی یک خزنده وب}
