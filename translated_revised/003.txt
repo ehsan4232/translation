@@ -3,12 +3,12 @@
 \subsection{فصل ۱: مقیاس‌پذیری از صفر تا میلیون‌ها کاربر}
 \subsection{فصل ۲: محاسبات سرانگشتی}
 \subsection{فصل ۳: چارچوبی برای مصاحبه‌های طراحی سیستم}
-\subsection{فصل ۴: طراحی محدودکننده‌ی نرخ}
-محدودکننده‌ی نرخ\footnote{\lr{Rate Limiter}} یکی از مؤلفه‌های مهم در سیستم‌های توزیع‌شده است.
-\subsection{فصل ۵: طراحی هش یکنواخت}
-هش یکنواخت\footnote{\lr{Consistent Hashing}} برای توزیع داده‌ها استفاده می‌شود.
-\subsection{فصل ۶: طراحی ذخیره‌ساز کلید-مقدار}
-ذخیره‌ساز کلید-مقدار\footnote{\lr{Key-Value Store}} یک ساختار داده‌ی پایه است.
+\subsection{فصل ۴: طراحی محدودکننده‌ی نرخ\footnotemark}
+\footnotetext{\lr{Rate Limiter}}
+\subsection{فصل ۵: طراحی هش یکنواخت\footnotemark}
+\footnotetext{\lr{Consistent Hashing}}
+\subsection{فصل ۶: طراحی ذخیره‌ساز کلید-مقدار\footnotemark}
+\footnotetext{\lr{Key-Value Store}}
 \subsection{فصل ۷: طراحی تولیدکننده‌ی شناسه‌ی یکتا در سیستم‌های توزیع‌شده}
 \subsection{فصل ۸: طراحی سرویس کوتاه‌کننده‌ی لینک}
 \subsection{فصل ۹: طراحی خزنده‌ی وب}
